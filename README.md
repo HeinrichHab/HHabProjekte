@@ -15,6 +15,9 @@ Die Inhalte bilden die Kernaufgaben eines SOC L1 Analysten ab:
 * **Phishing Investigation:** Rekonstruktion von Angriffsketten,
     Analyse von E-Mail Headern und Untersuchung der feindlichen
     Infrastruktur mittels OSINT Werkzeugen.
+* **Scripting & Automation:** Entwicklung von Werkzeugen zur
+    Prozessoptimierung und zur Automatisierung wiederkehrender
+    Aufgaben, um die Effizienz im SOC Alltag zu steigern.
 * **Incident Response & Hardening:** Ableitung technischer Gegen-
     maßnahmen und Härtungsempfehlungen. Anwendung von Frameworks
     wie NIST, BSI-Grundschutz und ISO 27001 Controls.
