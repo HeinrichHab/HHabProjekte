@@ -1,7 +1,7 @@
 # Simulationen & Cyber Labs
 
-Dieser Ordner enthält die Dokumentation von praktischen Übungs-
-szenarien. Er dient dem Nachweis meiner Analysefähigkeiten in
+Dieser Ordner enthält die Dokumentation von praktischen Übungsszenarien.
+Er dient dem Nachweis meiner Analysefähigkeiten in
 kontrollierten Umgebungen.
 
 ## Inhalt
