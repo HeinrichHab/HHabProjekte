@@ -16,7 +16,8 @@ Kernfakten der Analyse
     Eine OSINT Recherche (RDAP) ergab, dass diese Domain bereits am 16. April 2008 registriert wurde.
     Das extrem hohe Alter wird gezielt genutzt, um Reputationssysteme auszutricksen.
 
-    Verschlüsselung: Die Angreifer nutzten kostenlose Zertifikate (Let's Encrypt) für gezielte Subdomains (z. B. hxxps://advanzla-caseid[.]juanjosesese[.]com),
+    Verschlüsselung: Die Angreifer nutzten kostenlose Zertifikate (Let's Encrypt) für gezielte Subdomains
+    (z. B. hxxps://advanzla-caseid[.]juanjosesese[.]com),
     um verschlüsselte Internetseiten bereitzustellen und falsche Sicherheit zu suggerieren.
 
 Nachgewiesene Kompetenzen
@@ -26,5 +27,5 @@ Nachgewiesene Kompetenzen
     Informationsbeschaffung: Nutzung von Netzwerkrecherchen und Zertifikatsregistern (crt[.]sh)
     zur Aufdeckung der feindlichen Infrastruktur.
 
-    Vorfallsreaktion: Formulierung präziser technischer Abwehrmaßnahmen, wie die dynamische Prüfung von Links exakt beim Anklicken (statt beim Posteingang)
-    und der zwingende Einsatz physischer Sicherheitsschlüssel (MFA).
+    Vorfallsreaktion: Formulierung präziser technischer Abwehrmaßnahmen, wie die dynamische Prüfung von Links exakt beim Anklicken
+    (statt beim Posteingang) und der zwingende Einsatz physischer Sicherheitsschlüssel (MFA).
