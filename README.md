@@ -1,4 +1,4 @@
-# HHabProjekte: Portfolio für den Einstieg als SOC L1 Analyst
+# Portfolio für den Einstieg als SOC L1 Analyst
 
 ## TL;DR
 Dieses Repository ist ein technischer Praxisnachweis für meinen
