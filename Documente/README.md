@@ -1,31 +1,40 @@
-Analyse einer Phishingmail (10. März 2026)
+# Phishing Analyse: Advanzia Bank (März 2026)
 
-TL;DR 
-Dieses Projekt dokumentiert die systematische Untersuchung einer realen, am 10. März 2026 empfangenen Phishingmail. Ziel des Angriffs war der Diebstahl von Zugangsdaten der Advanzia Bank.
-Die Analyse belegt praktische Fähigkeiten in der Bedrohungserkennung, der Anwendung von OSINT Methoden und der Ableitung konkreter Schutzmaßnahmen für die IT-Sicherheit.
+## TL;DR
+Dokumentation einer realen Phishingmail vom 10. März 2026 zum
+Diebstahl von Advanzia Bank Zugangsdaten. Die Analyse belegt
+praktische Fähigkeiten in der Bedrohungserkennung, OSINT Methoden
+und der Umsetzung von IT-Sicherheit Standards.
 
-Kernfakten der Analyse
+## Analyseergebnisse
+Die Untersuchung der E-Mail offenbart eine hochgradig gezielte
+Vorgehensweise der Angreifer:
 
-    Angriffsvektor: Missbrauch eines legitimen Marketingdienstleisters (Constant Contact, Server IP: 208[.]75[.]122[.]14),
-    um standardisierte Spamfilter zu umgehen.
+* **Angriffsvektor:** Missbrauch des Marketingdienstleisters
+    Constant Contact (IP: 208[.]75[.]122[.]14), um technische
+    Standardspamfilter zu umgehen.
+* **Täuschung:** Einsatz von Typosquatting im Absendernamen
+    (`loginADVANZIA.app`) und in der Absenderadresse.
+* **Infrastruktur:** Nutzung der kompromittierten Domain
+    `juanjosesese.com` (registriert 2008). Das hohe Alter der
+    Domain wird gezielt genutzt, um Reputationssysteme zu täuschen.
+* **Verschlüsselung:** Einsatz von Let's Encrypt Zertifikaten für
+    Subdomains, um durch das HTTPS Symbol im Browser falsche
+    Sicherheit zu suggerieren.
 
-    Täuschung: Nutzung von Namensfälschungen (Typosquatting) im Absendernamen (loginADVANZIA[.]app statt Advanzia)
-    und in der Adresse (advanzla-maildrop[.]cc@sharedl[.]ccsend[.]com).
+## Kompetenznachweis & Standards
+Die Analyse deckt Kernbereiche moderner IT-Sicherheit ab:
 
-    Infrastruktur: Die gefälschte Loginseite wurde auf der kompromittierten Domain juanjosesese[.]com gehostet.
-    Eine OSINT Recherche (RDAP) ergab, dass diese Domain bereits am 16. April 2008 registriert wurde.
-    Das extrem hohe Alter wird gezielt genutzt, um Reputationssysteme auszutricksen.
+**Technisches Audit**
+* **Headeranalyse:** Prüfung von E-Mail Authentifizierungsdaten
+    wie SPF, DKIM und DMARC zur Verifikation der Absenderidentität.
+* **OSINT Recherche:** Nutzung von RDAP und Zertifikatsregistern
+    (`crt.sh`) zur Identifizierung feindlicher Infrastruktur.
 
-    Verschlüsselung: Die Angreifer nutzten kostenlose Zertifikate (Let's Encrypt) für gezielte Subdomains
-    (z. B. hxxps://advanzla-caseid[.]juanjosesese[.]com),
-    um verschlüsselte Internetseiten bereitzustellen und falsche Sicherheit zu suggerieren.
-
-Nachgewiesene Kompetenzen
-
-    Vektoranalyse: Auswertung von Headerdaten und E-Mail Authentifizierung (SPF, DKIM, DMARC).
-
-    Informationsbeschaffung: Nutzung von Netzwerkrecherchen und Zertifikatsregistern (crt[.]sh)
-    zur Aufdeckung der feindlichen Infrastruktur.
-
-    Vorfallsreaktion: Formulierung präziser technischer Abwehrmaßnahmen, wie die dynamische Prüfung von Links exakt beim Anklicken
-    (statt beim Posteingang) und der zwingende Einsatz physischer Sicherheitsschlüssel (MFA).
+**Vorfallsreaktion (Incident Response)**
+* **Abwehrmaßnahmen:** Ableitung präziser Schutzstrategien wie
+    dynamische Linkprüfung (Time of Click Protection) und der
+    Einsatz physischer Sicherheitsschlüssel (FIDO2/MFA).
+* **ISO 27001 Bezug:** Entspricht der Maßnahme A.5.7 (Threat
+    Intelligence) durch das Sammeln und Auswerten von Informationen
+    über Bedrohungen, um das Sicherheitsbewusstsein zu stärken.
