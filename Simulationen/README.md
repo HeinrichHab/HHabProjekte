@@ -1,19 +1,23 @@
-# Simulationen & Cyber Labs
+SIEM Homelab & Detection Engineering
 
-Dieser Ordner enthält die Dokumentation von praktischen Übungsszenarien.
-Er dient dem Nachweis meiner Analysefähigkeiten in
-kontrollierten Umgebungen.
+Dieser Ordner enthält die Dokumentation meiner eigenständigen Angriffssimulationen
+und Log-Analysen innerhalb meiner lokalen Elastic SIEM Umgebung.
+Er dient dem praktischen Nachweis meiner Fähigkeiten im Bereich Threat Detection
+und der Auswertung von Telemetriedaten (insbesondere Sysmon).
+Inhalt
 
-## Inhalt
-Die Simulationen unterteilen sich in zwei Bereiche:
+Die Dokumentation unterteilt sich in zwei Kernbereiche:
 
-1. **Plattformbasierte Labs:** Dokumentierte Lösungen und Analysen
-    von Tryhackme, Hackthebox und Kc7cyber.
-2. **Eigenständige Szenarien:** KI gestützte Simulationen zur
-    Untersuchung spezifischer Angriffsvektoren.
+    Angriffssimulationen (TTPs): Kontrollierte Ausführung von Angriffen
+    (z.B. mit Atomic Red Team) zur Generierung realitätsnaher Log-Daten.
 
-## Hinweis zur Struktur
+    Custom Detection Rules & Triage: Selbstgeschriebene Alerts zur Erkennung
+    von Anomalien sowie die Auswertung der generierten Windows Event Logs zur
+    Rekonstruktion von Angriffsketten.
+
+Hinweis zur Struktur
+
 Dieser Ordner bietet lediglich die Einleitung. Die detaillierten
-Analysereporte, gefundenen Artefakte und technischen Schritte
+Analysereporte, extrahierten Artefakte (IOCs) und der Code für die Detection Rules
 befinden sich in den jeweiligen Unterordnern der einzelnen
-Simulationen.
+Szenarien.
